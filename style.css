@@ -18,8 +18,11 @@ h1 {
 }
 
 nav {
+  flex: 1;
+  margin: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
