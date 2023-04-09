@@ -19,7 +19,7 @@ h1 {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -27,6 +27,7 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   margin-left: 10px;
