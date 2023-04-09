@@ -44,6 +44,10 @@ nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
+nav img {
+  height: 30px;
+}
+
 main {
   margin-top: 80px;
   padding: 20px;
