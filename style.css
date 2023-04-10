@@ -1,4 +1,10 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +21,7 @@ h1 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
 }
 
 nav {
@@ -51,15 +58,15 @@ nav img {
   height: 35px;
 }
 
+
 main {
-  padding: 80px;
-  margin: 20px;
+  font-family: "Open Sans", serif;
 }
 
 .about {
   background-image: url('images/background.png');
   background-size: cover;
-  padding: 0;
+  height: 100vh;
   margin: 0;
 }
 
