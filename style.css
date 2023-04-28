@@ -86,8 +86,7 @@ p {
 }
 
 .wrapper {
-  /*height: 100vh;*/
-  /*This part is important for centering*/
+  height: 100vh;
   display: grid;
   place-items: start;
   padding-top: 500px;
