@@ -87,6 +87,7 @@ p {
 
 .wrapper {
   display: grid;
+  height: auto;
   place-items: start;
   padding-top: 500px;
   margin-left: 100px;
