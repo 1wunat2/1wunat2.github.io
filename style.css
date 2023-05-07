@@ -15,6 +15,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999999999;
 }
 
 h1 {
@@ -89,7 +90,7 @@ p {
   display: grid;
   /*height:fit-content;*/
   place-items: start;
-  padding-top: 500px;
+  padding-top: 450px;
   margin-left: 100px;
 }
 
@@ -123,10 +124,4 @@ p {
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
-}
-
-.job h1 {
-  font-size: 35px;
-  font-weight: 400;
-  text-align: left;
-}
+} 
