@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -124,4 +125,11 @@ p {
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
+} 
+
+.projects h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  background-color:sandybrown
 } 
