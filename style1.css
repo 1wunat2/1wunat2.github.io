@@ -1,0 +1,135 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #333; */
+  /* color: #fff; */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999999;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Open Sans", serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  margin-right: 35px;
+}
+
+nav li {
+  margin-left: 20px;
+  padding: 0, 10px;
+}
+
+nav a {
+  /* color: #fff; */
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* nav a:hover { */
+  /* border-bottom: 2px solid #fff; */
+/* } */
+
+nav img {
+  height: 35px;
+}
+
+
+p {
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  color: #000000;
+}
+
+.about {
+  height: 100vh;
+  background-color:lightskyblue;
+  background-position: 100vh;
+  text-align: left;
+}
+
+.about h1 {
+  font-size: 75px;
+  padding-top: 500px;
+  margin-left: 100px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.about p {
+  font-size: 35px;
+  padding-top: 10px;
+  margin-left: 100px;
+}
+
+.wrapper {
+  display: grid;
+  /*height:fit-content;*/
+  place-items: start;
+  padding-top: 450px;
+  margin-left: 100px;
+}
+
+.intro {
+  width: 14ch;
+  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 7em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.work {
+  background-color: beige;
+}
+
+.work h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+} 
+
+.projects h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  background-color:sandybrown
+} 
