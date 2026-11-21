@@ -2,6 +2,6 @@
 # The first page (about.md) is your homepage.
 # Add a line to put a new page in the menu; delete a line to hide a page.
 # Pages not listed here still exist, they just aren't in the menu.
-- about.md
-- notes.md
-- contact.md
+- pages/about.md
+- pages/notes.md
+- pages/contact.md
