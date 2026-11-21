@@ -1,0 +1,21 @@
+# One entry per paper. Newest first. To add a paper, copy a block and edit it.
+# Wrap your own name in **double asterisks** to make it bold.
+- title: Title of your paper goes here
+  authors: "**Your Name**, Coauthor One, Coauthor Two"
+  venue: Venue or Journal
+  year: 2026
+  status: Published          # e.g. Published, Under review, Preprint
+  abstract: Paste a short abstract here.
+  links:
+    - { label: PDF,  url: "#" }
+    - { label: Code, url: "#" }
+    - { label: Data, url: "#" }
+
+- title: Title of a manuscript or preprint
+  authors: "Coauthor One, **Your Name**"
+  venue: arXiv preprint
+  year: 2026
+  status: Under review
+  abstract: Paste a short abstract here.
+  links:
+    - { label: arXiv, url: "#" }

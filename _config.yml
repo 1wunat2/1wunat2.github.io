@@ -1,0 +1,20 @@
+# Site-wide settings. Edit these once; they appear on every page.
+title: Your Name
+description: Personal research website of Your Name, graduate student in Your Field.
+role: PhD student in Your Field
+affiliation: Your Lab, Your University
+email: you@university.edu
+
+# Links shown under your name in the sidebar
+links:
+  - { label: Email,   url: "mailto:you@university.edu" }
+  - { label: CV,      url: "/assets/cv.pdf" }
+  - { label: Scholar, url: "https://scholar.google.com/" }
+  - { label: GitHub,  url: "https://github.com/your-username" }
+  - { label: ORCID,   url: "https://orcid.org/" }
+
+# Leave blank for a user site (your-username.github.io).
+# For a project site, set to "/repo-name".
+baseurl: ""
+
+exclude: [README.md]
