@@ -1,17 +1,17 @@
 # Site-wide settings. Edit these once; they appear on every page.
-title: Your Name
-description: Personal research website of Your Name, graduate student in Your Field.
-role: PhD student in Your Field
-affiliation: Your Lab, Your University
-email: you@university.edu
+title: Nathan Wu
+# description: Personal research website of Your Name, graduate student in Your Field.
+role: BMath student in Applied Math
+affiliation: University of Wateloo
+email: n4wu@uwaterloo.ca
 
 # Links shown under your name in the sidebar
 links:
-  - { label: Email,   url: "mailto:you@university.edu" }
+  - { label: Email,   url: "mailto:n4wu@uwaterloo.ca" }
   - { label: CV,      url: "/assets/cv.pdf" }
-  - { label: Scholar, url: "https://scholar.google.com/" }
-  - { label: GitHub,  url: "https://github.com/your-username" }
-  - { label: ORCID,   url: "https://orcid.org/" }
+  # - { label: Scholar, url: "https://scholar.google.com/" }
+  - { label: GitHub,  url: "https://github.com/1wunat2" }
+  # - { label: ORCID,   url: "https://orcid.org/" }
 
 # Leave blank for a user site (your-username.github.io).
 # For a project site, set to "/repo-name".
