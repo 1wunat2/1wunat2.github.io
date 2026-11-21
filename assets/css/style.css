@@ -52,3 +52,11 @@ footer { margin-top: 3rem; font-family: var(--sans); font-size: .8rem; color: va
   nav { flex-direction: row; flex-wrap: wrap; border-left: 0; padding-left: 0; gap: .5rem 1.25rem; }
 }
 
+
+.course { padding: 1.25rem 0; border-top: 1px solid var(--rule); }
+.course:last-of-type { border-bottom: 1px solid var(--rule); }
+.course h3 { margin: 0 0 .15rem; }
+.course-meta { font-family: var(--sans); font-size: .85rem; color: var(--muted); margin: 0 0 .75rem; }
+.notes-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+.notes-list li { padding: .2rem 0; }
+.note-label { font-family: var(--sans); font-size: .8rem; color: var(--muted); margin-left: .6rem; }

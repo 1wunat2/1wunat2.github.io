@@ -1,0 +1,21 @@
+# One block per course. Newest first.
+# Put each PDF in assets/notes/ and list its file name under "notes".
+# To add a course, copy a whole block. To add a note, copy a "- title" line pair.
+- code: COURSE 101
+  name: Course Name
+  term: Fall 2026
+  instructor: Prof. Instructor Name      # optional
+  description: One or two sentences on what the course covered.   # optional
+  notes:
+    - title: Full course notes
+      file: /assets/notes/course-101-notes.pdf
+      note: Covers weeks 1 to 12      # optional short label
+    - title: Midterm review sheet
+      file: /assets/notes/course-101-midterm.pdf
+
+- code: COURSE 202
+  name: Another Course Name
+  term: Winter 2026
+  notes:
+    - title: Lecture notes
+      file: /assets/notes/course-202-notes.pdf

@@ -18,6 +18,13 @@ list each page's file name, in the order you want. Delete a line to hide a page.
 
 2. Add `- teaching.md` to `_data/home.yml` to put it in the menu.
 
+## Add course notes
+1. Put the PDF in `assets/notes/`.
+2. Add it to `_data/notes.yml`: copy a course block for a new course, or add a
+   `title` and `file` pair under an existing course.
+The Course notes page (`notes.md`) updates itself. Remove `- notes.md`
+from `_data/home.yml` to hide it from the menu.
+
 ## Add a paper
 Copy a block in `_data/publications.yml`.
 
