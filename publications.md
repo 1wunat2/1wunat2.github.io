@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Publications
-nav_order: 3
 ---
 
 {% for pub in site.data.publications %}

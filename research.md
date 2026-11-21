@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Research
-nav_order: 2
 ---
 
 My work sits between [Area A] and [Area B]. I’m currently asking: *[the question that drives your research]*

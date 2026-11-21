@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Projects
-nav_order: 4
 ---
 
 <div class="project" markdown="1">

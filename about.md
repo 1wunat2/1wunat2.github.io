@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-nav_order: 1
+permalink: /
 ---
 
 I’m a graduate student at Your University, advised by [Prof. Advisor Name](#). I study [your core question in one plain sentence], with a focus on [methods or domain].
