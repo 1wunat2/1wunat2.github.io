@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Electrical and Computer Engineering (ECE)
+title: Electrical and Computer Engineering
 # description: Mechanics, electromagnetism, and quantum courses.
 permalink: /notes/ece/
 data: notes
