@@ -1,0 +1,16 @@
+- title: Course notes
+  # meta: LaTeX, updated November 2026
+  description: A latex template for course notes.
+  items:
+    - title: zip
+      file: /assets/templates/coursenotes.zip
+    - title: Example output
+      file: /assets/templates/course-notes.pdf
+
+- title: Assignments
+  description: A latex template for assignments.
+  items:
+    - title: zip
+      file: /assets/templates/assignments.zip
+    - title: Example output
+      file: /assets/templates/assignment.pdf

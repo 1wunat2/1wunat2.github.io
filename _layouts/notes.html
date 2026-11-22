@@ -3,18 +3,62 @@ layout: default
 ---
 {{ content }}
 
-{% assign courses = site.data[page.data] %}
-{% for course in courses %}
+{% assign groups = site.data[page.data] %}
+{% for group in groups %}
+{%- comment -%} Heading: "title", or "code: name", or whichever of code/name exists {%- endcomment -%}
+{%- capture heading -%}
+  {%- if group.title -%}{{ group.title }}
+  {%- elsif group.code and group.name -%}{{ group.code }}: {{ group.name }}
+  {%- else -%}{{ group.code | default: group.name }}
+  {%- endif -%}
+{%- endcapture -%}
+{%- comment -%} Meta line: "meta" if given, otherwise term and/or instructor {%- endcomment -%}
+{%- assign meta = group.meta -%}
+{%- unless meta -%}
+  {%- if group.term and group.instructor -%}
+    {%- capture meta %}{{ group.term }}, {{ group.instructor }}{% endcapture -%}
+  {%- else -%}
+    {%- assign meta = group.term | default: group.instructor -%}
+  {%- endif -%}
+{%- endunless -%}
+{%- assign entries = group.items | default: group.notes %}
 <section class="course">
-  <h3>{{ course.code }}: {{ course.name }}</h3>
-  <p class="course-meta">{{ course.term }}{% if course.instructor %}, {{ course.instructor }}{% endif %}</p>
-  {%- if course.description %}
-  <p>{{ course.description }}</p>
+  {%- if heading != "" %}
+  <h3>{{ heading }}</h3>
   {%- endif %}
+  {%- if meta %}
+  <p class="course-meta">{{ meta }}</p>
+  {%- endif %}
+  {%- if group.description %}
+  <p>{{ group.description }}</p>
+  {%- endif %}
+  {%- if entries.size > 0 %}
   <ul class="notes-list">
-    {%- for n in course.notes %}
-    <li><a href="{{ n.file | relative_url }}">{{ n.title }}</a>{% if n.note %}<span class="note-label">{{ n.note }}</span>{% endif %}<span class="note-label">PDF</span></li>
+    {%- for n in entries %}
+    {%- if n.file %}
+      {%- comment -%} Local files get the site base URL; full links (https://...) are used as written {%- endcomment -%}
+      {%- if n.file contains "://" -%}
+        {%- assign href = n.file -%}
+      {%- else -%}
+        {%- assign href = n.file | relative_url -%}
+      {%- endif -%}
+      {%- comment -%} Label: "format" if given, else the file extension, else "Link" for web links {%- endcomment -%}
+      {%- if n.format -%}
+        {%- assign fmt = n.format -%}
+      {%- elsif n.file contains "://" -%}
+        {%- assign fmt = "Link" -%}
+      {%- else -%}
+        {%- assign fmt = n.file | split: "." | last | upcase -%}
+      {%- endif -%}
+      {%- if n.title -%}
+        {%- assign label = n.title -%}
+      {%- else -%}
+        {%- assign label = n.file | split: "/" | last -%}
+      {%- endif %}
+    <li><a href="{{ href }}">{{ label }}</a>{% if n.note %}<span class="note-label">{{ n.note }}</span>{% endif %}<span class="note-label">{{ fmt }}</span></li>
+    {%- endif %}
     {%- endfor %}
   </ul>
+  {%- endif %}
 </section>
 {% endfor %}

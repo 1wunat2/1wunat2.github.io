@@ -1,21 +1,63 @@
-# One block per course. Newest first.
-# Put each PDF in assets/notes/ and list its file name under "notes".
-# To add a course, copy a whole block. To add a note, copy a "- title" line pair.
-- code: COURSE 101
-  name: Course Name
-  term: Fall 2026
-  instructor: Prof. Instructor Name      # optional
-  description: One or two sentences on what the course covered.   # optional
+- code: AMATH 231
+  name: Calculus 4
+  term: Winter 2024
+  description: This course cover vector calculus and fourier series.
   notes:
     - title: Full course notes
-      file: /assets/notes/course-101-notes.pdf
-      note: Covers weeks 1 to 12      # optional short label
-    - title: Midterm review sheet
-      file: /assets/notes/course-101-midterm.pdf
+      file: /assets/notes/AMATH231_definitions-and-theorems.pdf
+      note: Covers weeks 1 to 12
 
-- code: COURSE 202
-  name: Another Course Name
-  term: Winter 2026
+- code: AMATH 332
+  name: Applied Complex Analysis
+  term: Winter 2024
   notes:
     - title: Lecture notes
-      file: /assets/notes/course-202-notes.pdf
+      file: /assets/notes/AMATH332_topic-review.pdf
+
+- code: COMM 101
+  name: Introduction to Financial Markets
+  term: Winter 2024
+  notes:
+    - title: Course notes
+      file: /assets/notes/COMM101_course-notes.pdf
+
+- code: STAT 230
+  name: Probability
+  term: Winter 2024
+  notes:
+    - title: Lecture review
+      file: /assets/notes/STAT230_lecture-review.pdf
+
+- code: PMATH 333
+  name: Introduction to Real Analysis
+  term: Fall 2024
+  notes:
+    - title: Course notes
+      file: /assets/notes/PMATH333_course-notes.pdf
+
+- code: ECE 380
+  name: Analog Control Systems
+  term: Spring 2025
+  notes:
+    - title: Summary notes
+      file: /assets/notes/ECE380_sumary.pdf
+    - title: Cheat Sheet
+      file: /assets/notes/ECE380_cheat-sheet.pdf
+
+- code: PMATH 347
+  name: Groups and Rings
+  term: Spring 2025
+  notes:
+    - title: Summary notes
+      file: /assets/notes/PMATH347_summary.pdf
+
+- code: STAT 231
+  name: Statistics
+  term: Spring 2025
+  notes:
+    - title: Chapter 1 notes
+      file: /assets/notes/STAT231_ch1.pdf
+    - title: Chapter 2 notes
+      file: /assets/notes/STAT231_ch2.pdf
+    - title: Chapter 3 notes
+      file: /assets/notes/STAT231_ch3.pdf
