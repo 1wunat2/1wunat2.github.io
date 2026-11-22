@@ -2,7 +2,7 @@
   name: Calculus 4
   section: amath
   term: Winter 2024
-  description: This course cover vector calculus and fourier series.
+  # description: This course cover vector calculus and fourier series.
   notes:
     - title: Definitions and Theorems
       file: /assets/notes/AMATH231_definitions-and-theorems.pdf
