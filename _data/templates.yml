@@ -3,7 +3,7 @@
   description: A latex template for course notes.
   items:
     - title: zip
-      file: /assets/templates/coursenotes.zip
+      file: /assets/templates/course-notes.zip
     - title: Example output
       file: /assets/templates/course-notes.pdf
 
