@@ -1,20 +1,23 @@
 - code: AMATH 231
   name: Calculus 4
+  section: amath
   term: Winter 2024
   description: This course cover vector calculus and fourier series.
   notes:
-    - title: Full course notes
+    - title: Definitions and Theorems
       file: /assets/notes/AMATH231_definitions-and-theorems.pdf
 
 - code: AMATH 332
   name: Applied Complex Analysis
+  section: amath
   term: Winter 2024
   notes:
-    - title: Lecture notes
+    - title: Topic review
       file: /assets/notes/AMATH332_topic-review.pdf
 
 - code: COMM 101
   name: Introduction to Financial Markets
+  section: comm
   term: Winter 2024
   notes:
     - title: Course notes
@@ -22,6 +25,7 @@
 
 - code: STAT 230
   name: Probability
+  section: stat
   term: Winter 2024
   notes:
     - title: Lecture review
@@ -29,6 +33,7 @@
 
 - code: PMATH 333
   name: Introduction to Real Analysis
+  section: pmath
   term: Fall 2024
   notes:
     - title: Course notes
@@ -37,6 +42,7 @@
 
 - code: ECE 380
   name: Analog Control Systems
+  section: ece
   term: Spring 2025
   notes:
     - title: Summary notes
@@ -46,6 +52,7 @@
 
 - code: PMATH 347
   name: Groups and Rings
+  section: pmath
   term: Spring 2025
   notes:
     - title: Summary notes
@@ -54,6 +61,7 @@
 
 - code: STAT 231
   name: Statistics
+  section: stat
   term: Spring 2025
   notes:
     - title: Chapter 1 notes

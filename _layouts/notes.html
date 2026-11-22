@@ -4,6 +4,8 @@ layout: default
 {{ content }}
 
 {% assign groups = site.data[page.data] %}
+{%- comment -%} If the page sets "section", show only groups with that section {%- endcomment -%}
+{% if page.section %}{% assign groups = groups | where: "section", page.section %}{% endif %}
 {% for group in groups %}
 {%- comment -%} Heading: "title", or "code: name", or whichever of code/name exists {%- endcomment -%}
 {%- capture heading -%}

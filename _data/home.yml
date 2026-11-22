@@ -2,7 +2,15 @@
 # The first page (about.md) is your homepage.
 # Add a line to put a new page in the menu; delete a line to hide a page.
 # Pages not listed here still exist, they just aren't in the menu.
-- pages/about.md
-- pages/notes.md
-- pages/templates.md
-- pages/contact.md
+- page: pages/about.md
+
+- page: pages/notes.md
+  children:
+  - pages/notes/amath.md
+  - pages/notes/pmath.md
+  - pages/notes/ece.md
+  - pages/notes/stat.md
+
+- page: pages/templates.md
+
+- page: pages/contact.md

@@ -27,6 +27,29 @@ The Course notes page (`pages/notes.md`) updates itself. Its layout is
 `_data/notes.yml`. Edit the text in `pages/notes.md` to change the intro. Remove `- pages/notes.md`
 from `_data/home.yml` to hide it from the menu.
 
+## Subpages (for example, course notes by subject)
+1. Make a folder for them, such as `pages/notes/`, and add a page for each subpage.
+   Give each a `permalink`, a `description` (shown on the parent page), and, for a
+   notes page, `layout: notes`, `data: notes`, and a `section` name:
+
+   ---
+   layout: notes
+   title: Mathematics
+   description: Calculus and linear algebra.
+   permalink: /notes/math/
+   data: notes
+   section: math
+   ---
+
+2. In `_data/notes.yml`, add `section: math` to each course that belongs there.
+3. In `_data/home.yml`, list the subpages under their parent:
+
+   - page: pages/notes.md
+     children:
+       - pages/notes/math.md
+
+The parent page lists its subpages automatically, and each subpage links back.
+
 ## Add a paper
 Copy a block in `_data/publications.yml`.
 

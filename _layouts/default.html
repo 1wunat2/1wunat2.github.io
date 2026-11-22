@@ -17,10 +17,26 @@
     <p class="role">{{ site.role }}<br>{{ site.affiliation }}</p>
 
     <nav aria-label="Pages">
-      {% for file in site.data.home %}
-        {% assign p = site.pages | where: "path", file | first %}
-        {% if p %}<a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="active" aria-current="page"{% endif %}>{{ p.title }}</a>{% endif %}
-      {% endfor %}
+      {%- for item in site.data.home %}
+      {%- assign file = item.page | default: item %}
+      {%- assign p = site.pages | where: "path", file | first %}
+      {%- if p %}
+      {%- assign in_section = false %}
+      {%- if p.url == page.url %}{% assign in_section = true %}{% endif %}
+      {%- if item.children contains page.path %}{% assign in_section = true %}{% assign parent_page = p %}{% endif %}
+      <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="active" aria-current="page"{% endif %}>{{ p.title }}</a>
+      {%- if item.children and in_section %}
+      <div class="subnav">
+        {%- for cfile in item.children %}
+        {%- assign c = site.pages | where: "path", cfile | first %}
+        {%- if c %}
+        <a href="{{ c.url | relative_url }}"{% if c.url == page.url %} class="active" aria-current="page"{% endif %}>{{ c.title }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </div>
+      {%- endif %}
+      {%- endif %}
+      {%- endfor %}
     </nav>
 
     <div class="links">
@@ -29,8 +45,24 @@
   </aside>
 
   <main>
+    {%- if parent_page %}
+    <p class="crumb"><a href="{{ parent_page.url | relative_url }}">← {{ parent_page.title }}</a></p>
+    {%- endif %}
     <h2>{{ page.title }}</h2>
     {{ content }}
+
+    {%- for item in site.data.home %}
+    {%- if item.page == page.path and item.children %}
+    <ul class="subpages">
+      {%- for cfile in item.children %}
+      {%- assign c = site.pages | where: "path", cfile | first %}
+      {%- if c %}
+      <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a>{% if c.description %}<span class="sub-desc">{{ c.description }}</span>{% endif %}</li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {%- endfor %}
     <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
   </main>
 </div>
