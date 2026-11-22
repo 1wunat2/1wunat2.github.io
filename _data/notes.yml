@@ -5,7 +5,6 @@
   notes:
     - title: Full course notes
       file: /assets/notes/AMATH231_definitions-and-theorems.pdf
-      note: Covers weeks 1 to 12
 
 - code: AMATH 332
   name: Applied Complex Analysis
@@ -34,6 +33,7 @@
   notes:
     - title: Course notes
       file: /assets/notes/PMATH333_course-notes.pdf
+      note: incomplete
 
 - code: ECE 380
   name: Analog Control Systems
@@ -50,6 +50,7 @@
   notes:
     - title: Summary notes
       file: /assets/notes/PMATH347_summary.pdf
+      note: first section and some proofs missing
 
 - code: STAT 231
   name: Statistics
