@@ -8,6 +8,7 @@
   children:
   - pages/notes/amath.md
   - pages/notes/pmath.md
+  - pages/notes/phys.md
   - pages/notes/ece.md
   - pages/notes/stat.md
   - pages/notes/comm.md

@@ -1,3 +1,24 @@
+- code: PHYS 122
+  name: Waves, Electricity and Magnetism
+  section: phys
+  term: Winter 2023
+  notes:
+    - title: Summary
+      file: /assets/notes/PHYS122_summary.pdf
+
+- code: ECE 240
+  name: Electronic Circuits 1
+  section: ece
+  term: Fall 2023
+  notes:
+    - title: Op amps
+      file: /assests/notes/ECE240_op-amps.pdf
+    - title: Transistors
+      file: /assests/notes/ECE240_transistors.pdf
+    - title: CMOS Logic Gates
+      file: /assests/notes/ECE240_CMOS-Logic-Gates.pdf
+    
+
 - code: AMATH 231
   name: Calculus 4
   section: amath
