@@ -12,11 +12,11 @@
   term: Fall 2023
   notes:
     - title: Op amps
-      file: /assests/notes/ECE240_op-amps.pdf
+      file: /assets/notes/ECE240_op-amps.pdf
     - title: Transistors
-      file: /assests/notes/ECE240_transistors.pdf
+      file: /assets/notes/ECE240_transistors.pdf
     - title: CMOS Logic Gates
-      file: /assests/notes/ECE240_CMOS-Logic-Gates.pdf
+      file: /assets/notes/ECE240_CMOS-Logic-Gates.pdf
     
 
 - code: AMATH 231
@@ -67,7 +67,7 @@
   term: Spring 2025
   notes:
     - title: Summary notes
-      file: /assets/notes/ECE380_sumary.pdf
+      file: /assets/notes/ECE380_summary.pdf
     - title: Cheat Sheet
       file: /assets/notes/ECE380_cheat-sheet.pdf
 
