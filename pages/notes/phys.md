@@ -2,7 +2,7 @@
 layout: notes
 title: Physics
 # description: Mechanics, electromagnetism, and quantum courses.
-permalink: /notes/amath/
+permalink: /notes/phys/
 data: notes
 section: phys
 ---
